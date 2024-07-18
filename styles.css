@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://images.app.goo.gl/WirHGEYgTgvLB8zy8');
+    background-image: url('assets/download.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,6 +20,7 @@ body {
 .container {
     display: flex;
     max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -27,15 +28,26 @@ body {
 
 .sidebar {
     flex: 1;
+    max-width: 300px;
     padding: 20px;
     border-right: 1px solid #ccc;
-    max-width: 300px;
     background-color: #f8f8f8;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
 }
 
 .sidebar h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar h2 {
+        font-size: 1.2rem;
+    }
 }
 
 ul#films {
@@ -58,11 +70,6 @@ ul#films .film.item:hover {
 ul#films .film.item.sold-out {
     color: #999;
     text-decoration: line-through;
-}
-
-.main-content {
-    flex: 2;
-    padding: 20px;
 }
 
 .movie-details {

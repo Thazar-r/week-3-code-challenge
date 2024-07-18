@@ -27,7 +27,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone <repository_url>
+git clone <https://github.com/Thazar-r/week-3-code-challenge.git>
 cd flatdango
 Install dependencies:
 
